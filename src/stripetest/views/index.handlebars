@@ -1,0 +1,27 @@
+<section class="py-2">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Brooke's Website
+            </h1><p class="lead">Sample text for brooke's Website</p>
+            <form action='/charge' method='POST'>
+                <script 
+                    src='https://checkout.stripe.com/checkout.js'
+                    class='stripe-button'
+                    data-key = 'pk_test_0zAK4vZG6Cuu1fVUf0jqA2Rz00v1UnX3R3'
+                    data-amount='2500'
+                    data-name="Brooke's website"
+                    data-description="A sample on brooke's website"
+                    data-image='/img/asd.png'
+                    data-locale='auto'>
+                </script>
+                <script>
+                    //Hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display='none'
+                </script>
+                <button type="submit" class='btn btn-outline-dark text-white
+                btn-lg'>Purchase for $25</button>
+            </form>
+        </div>
+    </div>
+</section>
